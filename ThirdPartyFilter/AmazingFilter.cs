@@ -2,7 +2,7 @@
 
 namespace ThirdPartyFilter
 {
-    public class AmazingFilter : IFilter
+    public class AmazingFilter : IFilter<object>
     {
         public void Apply(object obj)
         {

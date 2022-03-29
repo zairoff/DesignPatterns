@@ -1,17 +1,17 @@
 ﻿namespace Adapter
 {
-    public class ImageViewer
+    public class ImageViewer<T>
     {
-        private readonly object _obj;
+        private readonly T _source;
 
-        public ImageViewer(object obj)
+        public ImageViewer(T source)
         {
-            _obj = obj;
+            _source = source;
         }
 
-        public void ApplyFilter(IFilter filter)
+        public void ApplyFilter(IFilter<T> filter)
         {
-            filter.Apply(_obj);
+            filter.Apply(_source);
         }
     }
 }

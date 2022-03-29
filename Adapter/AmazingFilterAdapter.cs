@@ -2,7 +2,7 @@
 
 namespace Adapter
 {
-    public class AmazingFilterAdapter : IFilter
+    public class AmazingFilterAdapter : IFilter<object>
     {
         private readonly AmazingFilter _amazingFilter;
 

@@ -1,7 +1,7 @@
 ﻿namespace ThirdPartyFilter
 {
-    public interface IFilter
+    public interface IFilter<T>
     {
-        void Apply(object obj);
+        void Apply(T source);
     }
 }

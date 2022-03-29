@@ -2,9 +2,9 @@
 
 namespace Adapter
 {
-    public class Blur : IFilter
+    public class Blur : IFilter<object>
     {
-        public void Apply(object obj)
+        public void Apply(object source)
         {
             Console.WriteLine("Applying Blur filter");
         }
