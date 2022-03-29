@@ -1,4 +1,6 @@
 ﻿using Adapter;
+using Factory;
+using Source;
 using ThirdPartyFilter;
 
 namespace App
@@ -7,11 +9,12 @@ namespace App
     {
         static void Main(string[] args)
         {
-            var amazingFilterAdapter = new AmazingFilterAdapter(new AmazingFilter());
-            var imageViewer = new ImageViewer<object>(new object());
+            var input = System.Console.ReadLine();
+            var filter = ImageFiltersFactory.GetFilter(input);
 
-            imageViewer.ApplyFilter(new Blur());
-            imageViewer.ApplyFilter(amazingFilterAdapter);
+            var imageViewer = new Viewer<Image>(new Image());
+
+            imageViewer.ApplyFilter(filter);
         }
     }
 }

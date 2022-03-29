@@ -1,17 +1,18 @@
-﻿using ThirdPartyFilter;
+﻿using Source;
+using ThirdPartyFilter;
 
 namespace Adapter
 {
-    public class AmazingFilterAdapter : IFilter<object>
+    public class ImageAmazingFilterAdapter : IFilter<Image>
     {
         private readonly AmazingFilter _amazingFilter;
 
-        public AmazingFilterAdapter(AmazingFilter amazingFilter)
+        public ImageAmazingFilterAdapter(AmazingFilter amazingFilter)
         {
             _amazingFilter = amazingFilter;
         }
 
-        public void Apply(object obj)
+        public void Apply(Image obj)
         {
             _amazingFilter.Apply(obj);
         }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Source
 {
-    public class Audio
+    public class Image
     {
     }
 }

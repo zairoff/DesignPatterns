@@ -1,10 +1,10 @@
 ﻿namespace Adapter
 {
-    public class ImageViewer<T>
+    public class Viewer<T>
     {
         private readonly T _source;
 
-        public ImageViewer(T source)
+        public Viewer(T source)
         {
             _source = source;
         }
