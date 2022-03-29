@@ -4,6 +4,6 @@ namespace Adapter
 {
     public interface IFilter
     {
-        void Apply();
+        void Apply(Image image);
     }
 }
