@@ -5,7 +5,7 @@ namespace ThirdPartyFilter
 {
     public class AmazingFilter : IFilter
     {
-        public void Apply(Image image)
+        public void Apply(object obj)
         {
             Console.WriteLine("Applying amazing filter");
         }

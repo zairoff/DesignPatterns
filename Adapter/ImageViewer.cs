@@ -6,16 +6,16 @@ namespace Adapter
 {
     public class ImageViewer
     {
-        private readonly Image _image;
+        private readonly object _obj;
 
-        public ImageViewer(Image image)
+        public ImageViewer(object obj)
         {
-            _image = image;
+            _obj = obj;
         }
 
         public void ApplyFilter(IFilter filter)
         {
-            filter.Apply(_image);
+            filter.Apply(_obj);
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Adapter
 {
     public class Blur : IFilter
     {
-        public void Apply(Image image)
+        public void Apply(object obj)
         {
             Console.WriteLine("Applying Blur filter");
         }

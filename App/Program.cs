@@ -7,7 +7,7 @@ namespace App
     {
         static void Main(string[] args)
         {
-            var imageViewer = new ImageViewer(new Image());
+            var imageViewer = new ImageViewer(new object());
             imageViewer.ApplyFilter(new Blur());
         }
     }
