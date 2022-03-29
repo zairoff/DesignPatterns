@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Adapter;
+using ThirdPartyFilter;
 
 namespace App
 {
@@ -6,7 +7,8 @@ namespace App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var imageViewer = new ImageViewer(new Image());
+            imageViewer.ApplyFilter(new Blur());
         }
     }
 }
