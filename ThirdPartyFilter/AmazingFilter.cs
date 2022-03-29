@@ -1,5 +1,4 @@
-﻿using Adapter;
-using System;
+﻿using System;
 
 namespace ThirdPartyFilter
 {

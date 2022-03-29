@@ -1,9 +1,4 @@
-﻿using Adapter;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ThirdPartyFilter
+﻿namespace ThirdPartyFilter
 {
     public interface IFilter
     {
